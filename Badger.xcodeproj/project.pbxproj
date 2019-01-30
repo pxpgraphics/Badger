@@ -10,6 +10,7 @@
 		AD5F0539220232ED004337F4 /* Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5F052F220232ED004337F4 /* Badger.framework */; };
 		AD5F056222026647004337F4 /* Badger.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5F055E22026647004337F4 /* Badger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD5F056C220268DA004337F4 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F056B220268DA004337F4 /* BaseTestCase.swift */; };
+		AD5F057422026D70004337F4 /* ManagedObjectIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F057322026D70004337F4 /* ManagedObjectIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		AD5F055D22026647004337F4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD5F055E22026647004337F4 /* Badger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badger.h; sourceTree = "<group>"; };
 		AD5F056B220268DA004337F4 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		AD5F057322026D70004337F4 /* ManagedObjectIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		AD5F056322026656004337F4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AD5F057322026D70004337F4 /* ManagedObjectIdentifier.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5F057422026D70004337F4 /* ManagedObjectIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +482,7 @@
 		AD5F0547220232EE004337F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
@@ -497,6 +502,7 @@
 		AD5F0548220232EE004337F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
