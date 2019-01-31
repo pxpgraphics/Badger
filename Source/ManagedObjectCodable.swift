@@ -26,9 +26,10 @@ public protocol ManagedObjectCodable: Codable {
 extension ManagedObjectCodable {
     
     /// Encodes the codable type into a managed object within the given managed object context.
-    func encode(in context: NSManagedObjectContext) throws -> NSManagedObject? {
-        // FIXME: Remove optionality and return NSMO from ManagedObjectEncoder.
-        return nil
+    func encode(in context: NSManagedObjectContext) throws -> NSManagedObject {
+        let encoder = ManagedObjectEncoder(context: context)
+        let managedObject = try encoder.encode(self)
+        return managedObject
     }
 }
 
@@ -42,10 +43,8 @@ public extension Collection where Iterator.Element: ManagedObjectCodable {
         managedObjects.reserveCapacity(count)
         
         try forEach { element in
-            if let managedObject = try element.encode(in: context) {
-                // FIXME: Remove optionality.
-                managedObjects.append(managedObject)
-            }
+            let managedObject = try element.encode(in: context)
+            managedObjects.append(managedObject)
         }
         
         return Array(managedObjects)
