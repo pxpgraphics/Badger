@@ -16,6 +16,7 @@
 		AD5F057A22028FC2004337F4 /* UnkeyedManagedObjectEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F057922028FC2004337F4 /* UnkeyedManagedObjectEncodingContainer.swift */; };
 		AD5F057D2202902C004337F4 /* SingleValueManagedObjectEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F057C2202902C004337F4 /* SingleValueManagedObjectEncodingContainer.swift */; };
 		AD5F057F22029080004337F4 /* KeyedManagedObjectEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F057E2202907F004337F4 /* KeyedManagedObjectEncodingContainer.swift */; };
+		AD5F058222029705004337F4 /* ManagedObjectEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F058122029705004337F4 /* ManagedObjectEncodingError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		AD5F057922028FC2004337F4 /* UnkeyedManagedObjectEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnkeyedManagedObjectEncodingContainer.swift; sourceTree = "<group>"; };
 		AD5F057C2202902C004337F4 /* SingleValueManagedObjectEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueManagedObjectEncodingContainer.swift; sourceTree = "<group>"; };
 		AD5F057E2202907F004337F4 /* KeyedManagedObjectEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedManagedObjectEncodingContainer.swift; sourceTree = "<group>"; };
+		AD5F058122029705004337F4 /* ManagedObjectEncodingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectEncodingError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				AD5F057522026FB8004337F4 /* ManagedObjectCodable.swift */,
 				AD5F057322026D70004337F4 /* ManagedObjectIdentifier.swift */,
+				AD5F058122029705004337F4 /* ManagedObjectEncodingError.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				AD5F057A22028FC2004337F4 /* UnkeyedManagedObjectEncodingContainer.swift in Sources */,
 				AD5F057822027275004337F4 /* ManagedObjectEncoder.swift in Sources */,
 				AD5F057D2202902C004337F4 /* SingleValueManagedObjectEncodingContainer.swift in Sources */,
+				AD5F058222029705004337F4 /* ManagedObjectEncodingError.swift in Sources */,
 				AD5F057F22029080004337F4 /* KeyedManagedObjectEncodingContainer.swift in Sources */,
 				AD5F057622026FB8004337F4 /* ManagedObjectCodable.swift in Sources */,
 			);
