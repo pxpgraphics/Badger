@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD5F0539220232ED004337F4 /* Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD5F052F220232ED004337F4 /* Badger.framework */; };
 		AD5F056222026647004337F4 /* Badger.h in Headers */ = {isa = PBXBuildFile; fileRef = AD5F055E22026647004337F4 /* Badger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD5F056C220268DA004337F4 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F056B220268DA004337F4 /* BaseTestCase.swift */; };
+		AD5F056C220268DA004337F4 /* ManagedObjectEncoderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F056B220268DA004337F4 /* ManagedObjectEncoderTestCase.swift */; };
 		AD5F057422026D70004337F4 /* ManagedObjectIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F057322026D70004337F4 /* ManagedObjectIdentifier.swift */; };
 		AD5F057622026FB8004337F4 /* ManagedObjectCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F057522026FB8004337F4 /* ManagedObjectCodable.swift */; };
 		AD5F057822027275004337F4 /* ManagedObjectEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F057722027275004337F4 /* ManagedObjectEncoder.swift */; };
@@ -17,6 +17,10 @@
 		AD5F057D2202902C004337F4 /* SingleValueManagedObjectEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F057C2202902C004337F4 /* SingleValueManagedObjectEncodingContainer.swift */; };
 		AD5F057F22029080004337F4 /* KeyedManagedObjectEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F057E2202907F004337F4 /* KeyedManagedObjectEncodingContainer.swift */; };
 		AD5F058222029705004337F4 /* ManagedObjectEncodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F058122029705004337F4 /* ManagedObjectEncodingError.swift */; };
+		AD5F058622029B2C004337F4 /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F058522029B2C004337F4 /* BaseTestCase.swift */; };
+		AD5F058D22029F94004337F4 /* Fakes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD5F058B22029F94004337F4 /* Fakes.xcdatamodeld */; };
+		AD5F05902202A174004337F4 /* FakeAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F058F2202A174004337F4 /* FakeAttributes.swift */; };
+		AD5F05922202A4E5004337F4 /* NSManagedObject+Badger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F05912202A4E5004337F4 /* NSManagedObject+Badger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,7 @@
 		AD5F055B22026647004337F4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD5F055D22026647004337F4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD5F055E22026647004337F4 /* Badger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badger.h; sourceTree = "<group>"; };
-		AD5F056B220268DA004337F4 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		AD5F056B220268DA004337F4 /* ManagedObjectEncoderTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectEncoderTestCase.swift; sourceTree = "<group>"; };
 		AD5F057322026D70004337F4 /* ManagedObjectIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectIdentifier.swift; sourceTree = "<group>"; };
 		AD5F057522026FB8004337F4 /* ManagedObjectCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectCodable.swift; sourceTree = "<group>"; };
 		AD5F057722027275004337F4 /* ManagedObjectEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectEncoder.swift; sourceTree = "<group>"; };
@@ -43,6 +47,10 @@
 		AD5F057C2202902C004337F4 /* SingleValueManagedObjectEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleValueManagedObjectEncodingContainer.swift; sourceTree = "<group>"; };
 		AD5F057E2202907F004337F4 /* KeyedManagedObjectEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedManagedObjectEncodingContainer.swift; sourceTree = "<group>"; };
 		AD5F058122029705004337F4 /* ManagedObjectEncodingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectEncodingError.swift; sourceTree = "<group>"; };
+		AD5F058522029B2C004337F4 /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		AD5F058C22029F94004337F4 /* Fakes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fakes.xcdatamodel; sourceTree = "<group>"; };
+		AD5F058F2202A174004337F4 /* FakeAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAttributes.swift; sourceTree = "<group>"; };
+		AD5F05912202A4E5004337F4 /* NSManagedObject+Badger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Badger.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +93,7 @@
 		AD5F055922026647004337F4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				AD5F056B220268DA004337F4 /* BaseTestCase.swift */,
+				AD5F058522029B2C004337F4 /* BaseTestCase.swift */,
 				AD5F056E22026BA5004337F4 /* Core */,
 				AD5F056F22026BAA004337F4 /* Extensions */,
 				AD5F057022026BAF004337F4 /* Features */,
@@ -153,6 +161,7 @@
 		AD5F056E22026BA5004337F4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AD5F056B220268DA004337F4 /* ManagedObjectEncoderTestCase.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -160,6 +169,7 @@
 		AD5F056F22026BAA004337F4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AD5F05912202A4E5004337F4 /* NSManagedObject+Badger.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -174,6 +184,7 @@
 		AD5F057122026BB5004337F4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AD5F058A22029F21004337F4 /* Models */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -193,6 +204,15 @@
 				AD5F057922028FC2004337F4 /* UnkeyedManagedObjectEncodingContainer.swift */,
 			);
 			name = Containers;
+			sourceTree = "<group>";
+		};
+		AD5F058A22029F21004337F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD5F058F2202A174004337F4 /* FakeAttributes.swift */,
+				AD5F058B22029F94004337F4 /* Fakes.xcdatamodeld */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,7 +339,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD5F056C220268DA004337F4 /* BaseTestCase.swift in Sources */,
+				AD5F058622029B2C004337F4 /* BaseTestCase.swift in Sources */,
+				AD5F05902202A174004337F4 /* FakeAttributes.swift in Sources */,
+				AD5F056C220268DA004337F4 /* ManagedObjectEncoderTestCase.swift in Sources */,
+				AD5F058D22029F94004337F4 /* Fakes.xcdatamodeld in Sources */,
+				AD5F05922202A4E5004337F4 /* NSManagedObject+Badger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +605,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD5F058B22029F94004337F4 /* Fakes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD5F058C22029F94004337F4 /* Fakes.xcdatamodel */,
+			);
+			currentVersion = AD5F058C22029F94004337F4 /* Fakes.xcdatamodel */;
+			path = Fakes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AD5F0526220232ED004337F4 /* Project object */;
 }

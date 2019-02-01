@@ -29,7 +29,7 @@ public struct ManagedObjectEncoder {
     
     /// Encodes the given managed object codable type into a managed object.
     /// - Note: The managed object will be registered to the managed object context owned by the encoder.
-    func encode<Encodable: ManagedObjectCodable>(_ encodable: Encodable) throws -> NSManagedObject {
+    public func encode<Encodable: ManagedObjectCodable>(_ encodable: Encodable) throws -> NSManagedObject {
         return try _encode(encodable, codingPath: [])
     }
     
