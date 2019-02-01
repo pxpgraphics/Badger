@@ -96,3 +96,24 @@ extension ManagedObjectEncoder {
         }
     }
 }
+
+// MARK: Setters
+
+extension ManagedObjectEncoder.Encoder {
+    
+    func set(_ value: NSObject?, forKey key: CodingKey) throws {
+        let propertyName = key.stringValue
+        let properties = managedObject.entity.propertiesByName.keys
+        guard properties.contains(propertyName) else {            
+            fatalError() // FIXME: Throw error.
+        }
+        
+        let selector = Selector("set" + propertyName.capitalized + ":")
+        guard managedObject.responds(to: selector) else {
+            fatalError() // FIXME: Throw error.
+        }
+        
+        managedObject.setValue(value, forKey: propertyName)
+        // managedObject.perform(selector, with: value) // FIXME: Replace with perform(_:with:)
+    }
+}

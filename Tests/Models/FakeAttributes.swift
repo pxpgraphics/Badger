@@ -53,7 +53,7 @@ struct FakeAttributes: Codable {
     // MARK: Querying
     
     static func findOrCreate(_ identifier: FakeAttributes.Identifier, in context: NSManagedObjectContext) throws -> FakeAttributesManagedObject {
-        return try context.findOrCreate(identifier: identifier.rawValue as NSString, property: "identifier", entityName: "FakeAttributes")
+        return try context.findOrCreate(identifier: identifier.rawValue as NSString, forPrimaryKey: "identifier", entityName: "FakeAttributes")
     }
 }
 
@@ -122,7 +122,7 @@ final class FakeAttributesManagedObject: NSManagedObject {
     
     @NSManaged var date: Date
     
-    @NSManaged var decimal: Decimal
+    @NSManaged var decimal: NSDecimalNumber // Note: Decimal maps to a scalar type and cannot be dynamically set within Core Data.
     
     @NSManaged var double: Double
     
@@ -136,11 +136,11 @@ final class FakeAttributesManagedObject: NSManagedObject {
     
     @NSManaged var string: String
     
-    @NSManaged var uri: URL
+    @NSManaged var uri: URL // Note: URI maps to a string type and cannot be dynamically set within Core Data.
     
-    @NSManaged var uuid: UUID
+    @NSManaged var uuid: UUID // Note: UUID maps to a string type and cannot be dynamically set within Core Data.
     
-    @NSManaged var enumValue: String
+    @NSManaged var `enum`: String // Note: Swift enumerations map to a variety of type representations and cannot be dynamically set within Core Data.
     
     @NSManaged var optional: String?
 }

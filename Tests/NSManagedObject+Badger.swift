@@ -12,10 +12,10 @@ import CoreData
 
 extension NSManagedObjectContext {
     
-    func findOrCreate<T: NSManagedObject>(identifier: NSObject, property: String, entityName: String) throws -> T {
+    func findOrCreate<T: NSManagedObject>(identifier: NSObject, forPrimaryKey primaryKey: String, entityName: String) throws -> T {
         
         let fetchRequest = NSFetchRequest<T>(entityName: entityName)
-        fetchRequest.predicate = NSPredicate(format: "%K == %@", property, identifier)
+        fetchRequest.predicate = NSPredicate(format: "%K == %@", primaryKey, identifier)
         fetchRequest.fetchLimit = 1
         fetchRequest.includesSubentities = true
         fetchRequest.returnsObjectsAsFaults = false
@@ -24,7 +24,7 @@ extension NSManagedObjectContext {
             return existingManagedObject
         } else {
             let newManagedObject = NSEntityDescription.insertNewObject(forEntityName: entityName, into: self) as! T
-            newManagedObject.setValue(identifier, forKey: property)
+            newManagedObject.setValue(identifier, forKey: primaryKey)
             return newManagedObject
         }
     }

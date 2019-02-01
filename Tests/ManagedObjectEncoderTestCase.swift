@@ -47,7 +47,7 @@ final class ManagedObjectEncoderTestCase: BaseTestCase {
             XCTAssert(managedObject.boolean == value.boolean)
             XCTAssert(managedObject.data == value.data)
             XCTAssert(managedObject.date == value.date)
-            XCTAssert(managedObject.decimal == value.decimal)
+            XCTAssert(managedObject.decimal.decimalValue == value.decimal)
             XCTAssert(managedObject.double == value.double)
             XCTAssert(managedObject.float == value.float)
             XCTAssert(managedObject.int16 == value.int16)
@@ -56,7 +56,7 @@ final class ManagedObjectEncoderTestCase: BaseTestCase {
             XCTAssert(managedObject.string == value.string)
             XCTAssert(managedObject.uri == value.uri)
             XCTAssert(managedObject.uuid == value.uuid)
-            XCTAssert(managedObject.enumValue == value.enum.rawValue)
+            XCTAssert(managedObject.enum == value.enum.rawValue)
             XCTAssertNil(managedObject.optional)
             
             try context.save()
